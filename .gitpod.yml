@@ -22,7 +22,7 @@ github:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - before: echo "nvm use default" >> ~/.bashrc && yarn install --global near-cli && nvm use default
+  - before: echo "nvm use default" >> ~/.bashrc && yarn global add near-cli && nvm use default
     init: yarn && yarn dev
     command: source ~/.bashrc; gp open README-Gitpod.md && yarn dev
 
